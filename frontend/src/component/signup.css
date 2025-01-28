@@ -1,0 +1,108 @@
+#reg {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/regbg.png); /* Background image for the entire page */
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    position: relative;
+}
+
+.register-wrapper {
+    position: relative; /* Wrapper to control absolute positioning */
+}
+
+.register-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+    position: relative; /* Make this container the reference for absolute positioning */
+}
+
+.register-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #465bc0;
+}
+
+.register-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Adjusted gap between form elements */
+}
+
+.register-container input {
+    padding: 10px;
+    margin-bottom: 5px; /* Space below input fields */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.register-container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Space below the button */
+}
+
+.register-container button:hover {
+    background-color: #45a049;
+}
+
+.register-container p {
+    text-align: center;
+    margin-top: 10px; /* Adjusted margin to decrease space above the paragraph */
+}
+
+.register-container a {
+    color: #091fc8;
+    text-decoration: none;
+}
+
+.register-container a:hover {
+    text-decoration: underline;
+}
+
+/* Styles for the Close Button */
+.close-button {
+    position: absolute; /* Position relative to .register-wrapper */
+    top: 1px; /* Adjusted to position correctly */
+    right: 1px; /* Move to the right edge */
+    font-size: 10px; /* Size of the cross */
+    color: #000104; /* Default color */
+    cursor: pointer; /* Change cursor on hover */
+    background: white; /* White background */
+    border-radius: 50%; /* Make it circular */
+    padding: 5px; /* Space around the 'x' */
+    border: 1px solid #ccc; /* Border for better visibility */
+}
+
+.close-button:hover {
+    color: #903390; /* Change color on hover */
+    border-color: #903390; /* Change border on hover */
+}
+
+.back-button {
+    margin-bottom: 20px; /* Spacing between the button and form */
+    padding: 10px 15px; /* Padding for the button */
+    background-color: #007bff; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  

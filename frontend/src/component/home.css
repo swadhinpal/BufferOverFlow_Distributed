@@ -1,0 +1,83 @@
+#body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(32, 52, 183, 0.8), rgba(165, 184, 164, 0.8)), url(images/homepage.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+}
+
+.content {
+    display: flex; /* Use flex to arrange left and right sections */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Optional: Limit max width */
+    margin-top: 20px; /* Space between logo and content */
+}
+
+.intro {
+    text-align: center; /* Center align intro section */
+    margin-bottom: 20px; /* Space between intro and content */
+}
+
+.left-section {
+    flex: 1; /* Take up half of the available space */
+    padding: 20px; /* Add padding */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align items to the top */
+    text-align: left; /* Align text to the left */
+}
+
+.right-section {
+    flex: 1; /* Take up half of the available space */
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+    align-items: flex-start; /* Align image to the top */
+}
+
+.logo {
+    width: 80px; /* Width of the logo */
+    margin-top: 30px; /* Space from the top of the body */
+    border-radius: 25px; /* Adjust for a rounded logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+h1 {
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 5px; /* Space from the logo */
+}
+
+h2 {
+    color: black; /* Color for the h2 text */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+p {
+    font-size: 20px;
+    color: rgb(9, 10, 10);
+    text-align: left; /* Align text to the left */
+    margin: 0; /* Remove default margin */
+}
+
+.signup-button {
+    margin-top: 20px; /* Space above the button */
+    padding: 10px 20px; /* Button padding */
+    background-color: #4CAF50; /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+}
+
+.signup-button:hover {
+    background-color: #45a049; /* Darken button on hover */
+}
+
+.action-image {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}

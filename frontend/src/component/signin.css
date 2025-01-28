@@ -1,0 +1,100 @@
+#lg {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/regbg.png); /* Use a similar image or adjust based on preference */
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    font-family: 'Arial', sans-serif;
+    position: relative;
+}
+
+.login-wrapper {
+    position: relative; /* Make the wrapper container relative for absolute positioning */
+}
+
+.login-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px; /* Consistent width with the register container */
+    position: relative; /* Make this container the reference for absolute positioning */
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #465bc0; /* Match the register title color */
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Adjusted gap between form elements */
+}
+
+.login-container input {
+    padding: 10px;
+    margin-bottom: 5px; /* Space below input fields */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Space below the button */
+}
+
+.login-container button:hover {
+    background-color: #45a049;
+}
+
+.login-container p {
+    text-align: center;
+    margin-top: 10px; /* Adjusted margin to decrease space above the paragraph */
+}
+
+.login-container a {
+    color: #091fc8;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+/* Styles for the Close Button */
+.close-button {
+    position: absolute;
+    top: -15px; /* Move to top edge */
+    right: -15px; /* Move to right edge */
+    font-size: 24px; /* Size of the cross */
+    color: #465bc0; /* Default color */
+    cursor: pointer;
+    background: white;
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.close-button:hover {
+    color: #903390;
+    border-color: #903390;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    margin-top: 10px;
+}

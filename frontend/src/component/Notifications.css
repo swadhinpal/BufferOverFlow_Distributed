@@ -1,0 +1,45 @@
+.notifications {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.back-button {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+.notification-item {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.notification-item:hover {
+  background-color: #f1f1f1; /* Light gray on hover */
+}
+
+p {
+  margin: 0;
+  font-size: 16px;
+}

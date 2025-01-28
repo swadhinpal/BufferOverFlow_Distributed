@@ -1,0 +1,29 @@
+/* src/components/Nav.css */
+
+/* src/components/Nav.css */
+
+nav {
+    position: absolute; /* Use absolute positioning to place it in the top right */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end; /* Align the links to the right */
+}
+
+.nav-link {
+    color: #130e13; /* Set link color */
+    text-decoration: none; /* Remove underline */
+    padding: 5px 10px; /* Adjust padding for a smaller button */
+    background-color: rgb(198, 209, 227); /* Background color */
+    border-radius: 30px; /* Rounded corners */
+    font-size: 0.6em; /* Font size */
+    display: flex; /* Align text properly */
+    align-items: center; /* Center align text vertically */
+    justify-content: center; /* Center align text horizontally */
+    width: 50px; /* Set a smaller fixed width */
+    height: 20px; /* Set a smaller fixed height */
+}

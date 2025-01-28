@@ -1,0 +1,31 @@
+{
+    "name": "signup",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "server": "nodemon index.js",
+      "client": "npm run start --prefix ../frontend",
+      "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+      "build": "npm i"
+    },
+    "proxy": "http://localhost:4001/",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "nodemon": "^3.1.0"
+    },
+    "dependencies": {
+      "bcrypt": "^5.1.1",
+      "axios": "^1.7.9",
+      "body-parser": "^1.20.3",
+      "cors": "^2.8.5",
+      "dotenv": "^16.4.5",
+      "express": "^4.21.2",
+      "jsonwebtoken": "^9.0.2",
+      "mongodb": "^6.12.0",
+      "node-html-parser": "^6.1.13"
+    }
+  }
+  

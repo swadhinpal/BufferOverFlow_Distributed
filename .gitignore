@@ -1,0 +1,55 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm/
+
+# Optional yarn cache directory
+.yarn/
+
+# Environment variables
+.env
+
+# Testing outputs
+coverage/
+*.lcov
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
+
+
+
+
+node-server:
+    restart: always
+    depends_on:
+      - mongodb
+    build:
+      context: ./backend
+    ports:
+      - "4000:4000"
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017
+      - MONGO_USER=user
+      - MONGO_PASSWORD=pass
+      - DB_NAME=bufferOverflow
